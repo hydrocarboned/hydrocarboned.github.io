@@ -1,5 +1,5 @@
 
-baseurl = "/"
+baseurl = "/posts"
 languageCode = "en-us"
 title = 'My New Hugo Site'
 # Add it only if you keep the theme in the `themes` directory.
