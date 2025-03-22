@@ -1,7 +1,7 @@
 
-baseurl = "/posts"
+baseurl = "/"
 languageCode = "en-us"
-title = 'My New Hugo Site'
+title = 'MrFCode Blog'
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
@@ -26,7 +26,7 @@ pagination.pagerSize = 5
   fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # if your resource directory contains an image called `cover.(jpg|png|webp)`,
   # then the file will be used as a cover automatically.
@@ -76,7 +76,7 @@ pagination.pagerSize = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "MrFCode Blog"
 
     [languages.en.params]
       subtitle = "A simple, retro theme for Hugo"
@@ -94,18 +94,18 @@ pagination.pagerSize = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "MrFCode Blog"
         logoHomeLink = "/"
 
       [languages.en.menu]
         [[languages.en.menu.main]]
           identifier = "about"
           name = "About"
-          url = "/about"
+          url = "/"
         [[languages.en.menu.main]]
           identifier = "showcase"
           name = "Showcase"
-          url = "/showcase"
+          url = "/"
 
 [caches]
   [caches.images]

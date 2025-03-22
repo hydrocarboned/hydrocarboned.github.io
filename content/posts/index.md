@@ -1,13 +1,17 @@
 
-# Blog Setup with hugo in Linux
-### From Mark Down file into website
+# Blog Setup with hugo in Ubuntu (Linux)
+### From Mark Down (.md) file into website
 
 
 ### Required to be installed
-- `go, git`
+- `Go, Git, DartSass`
+
+## First open terminal & Install git and go
+`sudo apt update && sudo apt install git golang-go -y`
+
 
 # Getting started
-- First install hugo from the official website [Download Hugo](https://gohugo.io/installation/)
+- Install hugo from the official website. [Download from here](https://github.com/gohugoio/hugo/releases/latest)
 - Then check the version if you have download it correctly by typing `hugo version`
 - Then do some initial works such down below:
 
@@ -17,7 +21,7 @@
 	### Secondly, Initialize an empty Git repository in the current directory.
 	- `git init`
 	### Then, add an theme into the site dirrecotry, example:
-	- `git submodule add https://github.com/panr/hugo-themes-terminal.git themes/terminal`
+	- `git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal`
 	- `for more themes option go to:` 
 	[Complete List | Hugo Themes](https://themes.gohugo.io)
 	### After that, go to [terminal themes docs](https://github.com/panr/hugo-theme-terminal/tree/master)
@@ -153,5 +157,35 @@ pagination.pagerSize = 5
 
 
 ```
+
+---
+
+## Try run the server with this command:
+`hugo server`
+or run this if you want to run the site outside from your localhost
+`hugo server --bind 0.0.0.0`
+- check if the site is running without any problem in your browser
+
+## Now to add some content:
+- Create an .md file in `content/` folder. Example(index.md).
+
+```index.md
+
+  # Hello World
+
+
+```
+- in the index.md you can put your contents.
+
+
+
+
+
+
+
+
+
+
+
 
 
